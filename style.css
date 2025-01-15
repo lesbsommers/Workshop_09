@@ -1,95 +1,130 @@
-/*main section of the whole body of the page. Applies to all pages*/
-.main {
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: rgb(246, 220, 223);
+  align-items: center;
 }
 
 /*navigation menu*/
 .nav {
   text-align: center;
   font-size: 15px;
-  color: black;
   word-spacing: 50px;
   padding-bottom: 20px;
+  text-transform: lowercase;
+}
+
+.nav > a {
   text-decoration: none;
+  color: white;
 }
 
 #main-header {
   text-align: center;
-  font: 100px;
   padding: 20px;
+  font-family: cursive;
+  font-size: 20px;
 }
 
 /*css for index.html*/
-#main-image{
-    display:grid;
-    place-items: center;
+#main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20%;
 }
 #welcome {
   text-align: center;
   font-family: cursive;
   font-size: 30px;
+  margin-bottom: 20%;
 }
 
-.p1 {
+#welcome-p {
   text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
-  font-family: geneva;
-  display: inline-flex;
+  margin-bottom: 20%;
 }
 
 /*css for about.html*/
 .header-index {
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    padding: 10px;
-    background-color: rgb(234, 72, 91);
-    font: 20px geneva bold;
-  }
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(234, 72, 91);
+  font: 20px geneva bold;
+}
 
-  #developer {
-    text-align: left;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    padding-top: 10px;
-    display: inline;
-  }
+.section1 {
+  text-align: right;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 20px;
+  display: inline;
+}
+
+.section2 {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+  display: inline;
+}
+
+.section3 {
+  text-align: right;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+  display: inline;
+}
 
 /*<p> adding height to the paragraphs that contain the images which are set to 200px width + height*/
-.p2 {
+.p1 {
+  text-align: right;
+  font-size: 15px;
+  font-family: geneva;
   height: 300px;
-  display: inline-block;
+}
+
+.p2 {
+  text-align: left;
+  font-size: 15px;
+  font-family: geneva;
+  height: 300px;
 }
 
 .image {
-  float: right;
-  padding-left: 30px;
-}
-
-#philosopher {
-  text-align: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 20px;
+  float: left;
+  padding-right: 100px;
+  margin-right: 100px;
 }
 
 .image2 {
-  float: left;
-  padding-right: 30px;
+  float: right;
+  padding-left: 100px;
+  margin-left: 100px;
 }
-
-#athlete {
-  text-align: left;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 20px;
-}
-
 
 /*footer*/
 footer {
   text-align: center;
   text-transform: lowercase;
-  color: white;
   padding: 20px;
+  width: 100%;
+  height: 60%;
   background-color: rgb(234, 72, 91);
-  font: 15px geneva bold;
-  word-spacing: 50px;
+  word-spacing: 70px;
+}
+
+footer > a {
+  text-decoration: none;
+  color: white;
+  font: 18px geneva bold;
 }
