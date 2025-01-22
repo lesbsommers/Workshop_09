@@ -172,22 +172,53 @@ footer > a {
   font: 18px geneva bold;
 }
 
-/* @media */
+/* @media max-width 480*/
 @media screen and (max-width: 480px) {
-  .section1 {
+  .body {
     flex-wrap: wrap;
     width: 100%;
   }
 }
 
+@media screen and (max-width: 480px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+/* @media min-width 481 and max-width 1024*/
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .section {
+  .body {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  textarea {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  footer{
+    position:fixed;
+  }
+}
+
+/* @media min-width 1025 and max-width 1680*/
+@media screen and (min-width: 1025px) and (max-width: 1680px) {
+  .body {
     flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1680px) {
-  .section {
-    flex-wrap: wrap;
+  .textarea {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1680px) {
+  .footer {
+    display: flex;
+    align-items: flex-end;
   }
 }
