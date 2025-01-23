@@ -6,6 +6,8 @@ body {
   flex-direction: column;
   background-color: rgb(246, 220, 223);
   align-items: center;
+  margin: 0%;
+  padding: 0%;
 }
 
 /*navigation menu*/
@@ -24,7 +26,7 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 60%;
 }
 
 #main-header {
@@ -40,7 +42,10 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
+  margin-left: 30%;;
+  width: 40%;
+  height: 40%;
 }
 #welcome {
   text-align: center;
@@ -120,12 +125,16 @@ main {
   float: left;
   padding-right: 100px;
   margin-right: 100px;
+  width: 25%;
+  height: 25%;
 }
 
 .image2 {
   float: right;
   padding-left: 100px;
   margin-left: 100px;
+  width: 25%;
+  height: 20%;
 }
 
 /*css for contact.html*/
@@ -135,7 +144,7 @@ form {
   align-items: center;
   color: black;
   width: 50%;
-  margin-bottom: 15%;
+  margin-bottom: 20%;
   margin-left: 20%;
   box-sizing: content-box;
   padding: 2rem;
@@ -146,6 +155,10 @@ form {
 
 input:hover {
   border-color: hsla(190, 67%, 45%, 0.377);
+}
+
+textarea {
+  width: 70%;
 }
 
 textarea:hover {
@@ -173,6 +186,7 @@ footer > a {
 }
 
 /* @media max-width 480*/
+/*contact page*/
 @media screen and (max-width: 480px) {
   .body {
     flex-wrap: wrap;
@@ -181,13 +195,110 @@ footer > a {
 }
 
 @media screen and (max-width: 480px) {
+  form {
+    width: 80%;
+    height: 30%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   textarea {
     width: 100%;
+  }
+}
+
+/*home page, about page, portolio page*/
+@media screen and (max-width: 480px) {
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 20%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header-index {
+    width: 80%;
+    height: 10%
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main-image {
+  align-content: center;
+  margin-top: 40px;
+  margin-bottom: 20%;
+  height: 20%;
+  width: 80%;
+  margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: 40%;
+    height: 40%;
+    padding-right: 10%;
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image2 {
+    width: 40%;
+    height: 40%;
+    padding-left: 10%;
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .p1 {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .p2 {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: 1px;
+    font: 1px geneva bold;
+    /*position: sticky;*/
   }
 }
 
 /* @media min-width 481 and max-width 1024*/
 @media screen and (min-width: 481px) and (max-width: 1024px) {
+  form {
+    width: 80%;
+    height: 30%;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .body {
     flex-wrap: wrap;
   }
@@ -198,27 +309,36 @@ footer > a {
     width: 100%;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+/*@media screen and (min-width: 481px) and (max-width: 1024px) {
   footer{
     position:fixed;
   }
-}
+}*/
 
 /* @media min-width 1025 and max-width 1680*/
 @media screen and (min-width: 1025px) and (max-width: 1680px) {
   .body {
     flex-wrap: wrap;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1680px) {
+  form {
+    width: 80%;
+    height: 30%;
+    margin-left: 40px;
+  }
+
+@media screen and (min-width: 1025px) and (max-width: 1680px) {
   .textarea {
-    width: 100%;
+    width: 300%; 
   }
 }
+
 @media screen and (min-width: 1025px) and (max-width: 1680px) {
   .footer {
     display: flex;
-    align-items: flex-end;
   }
 }
